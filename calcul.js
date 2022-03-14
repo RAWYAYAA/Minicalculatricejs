@@ -26,8 +26,7 @@ numbersE1.forEach(number =>{
 });
 operationE1.forEach(operation =>{
     operation.addEventListener('click', (e)=>{
-        if (!dis2Num || lastOperation !== '' ){
-            if(lastOperation === '-') 
+        if (!dis2Num) {
          return;
         }
         haveDot=false;
@@ -39,7 +38,6 @@ operationE1.forEach(operation =>{
         }
         clearVar(operationName);
         lastOperation=operationName;
-        console.log(result);
     })
 });
 function clearVar(name= ' '){
