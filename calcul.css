@@ -1,45 +1,66 @@
-.container {
-    max-width: 200px;
-    margin: 10vh auto 0 auto;
-    box-shadow: 0px 0px 43px 17px rgba(153,153,153,1);
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
-#display {
+html{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+section{
+    background-color: rgb(18,26,31);
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    width: 90%;
+    max-width: 400px;
+    background-color: rgb(39,55,59);
+    border-radius: 8px;
+    overflow: hidden;
+}
+.display{
+    background-color: rgb(182,182,182);
+    height: 100px;
+    width: 100%;
     text-align: right;
-    height: 70px;
-    line-height: 70px;
-    padding: 16px 8px;
-    font-size: 25px;
+    padding: 20px;
+    font-size: 30px;
+    position: relative;
 }
-.buttons {
+.display-1{
+    opacity: .4;
+    font-size: 20px;
+    height: 20px;
+    overflow: hidden;
+}
+.temp-result{
+   position: absolute; 
+   bottom: 0;
+   left: 10;
+   font-size: 20px;
+   opacity: .4;
+}
+.all-buttons{
+    color: whitesmoke;
     display: grid;
-    border-bottom: 1px solid #999;
-    border-left: 1px solid#999;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 3px;
+    grid-template: repeat(4, 1fr) / repeat(4,1fr);
 }
-.buttons{
-    border-top: 1px solid #999;
-    border-right: 1px solid#999;
-}
-.button {
-    border: 0.5px solid #999;
-    background-color: rgba(128, 128, 128, 0.623);
-    line-height: 100px;
-    text-align: center;
-    font-size: 25px;
+.button{
+    border: -5px solid rgba(92,92,92, 0.137);
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
     cursor: pointer;
 }
-#equal {
-    background-color:rgba(0, 0, 255, 0.616);
-    color: white;
+.button:hover{
+    background-color: rgb(30,43,46);
 }
-
-.button:hover {
-    background-color: #323330;
-    color: white;
-    transition: 0.5s ease-in-out;
-}
-#equal:hover{
-    background-color:black;
-    transition: 0.5s ease-in-out;
+.btn-0{
+    grid-column: 1/3;
 }
