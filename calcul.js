@@ -96,7 +96,7 @@ window.addEventListener('keydown',(e)=>{
     e.key === '7' || 
     e.key === '8' || 
     e.key === '9' || 
-    e.key === '.' 
+    e.key === '.'  
     ){
     clickButtonE1(e.key);
    }
